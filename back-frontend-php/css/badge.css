@@ -1,0 +1,236 @@
+@CHARSET "UTF-8";
+
+body
+{
+    background-color:#439DBB;
+	
+	font-family: Quicksand;
+	font-size: 14pt;
+	margin:0;	
+	padding:0;
+	min-width:1007px;
+	min-height:880px;
+	
+	color: #ffffff;
+	-webkit-text-size-adjust:none;
+}
+
+
+a {
+	
+	color: #A8E9FF;
+		
+}
+
+a:hover {
+	color: #5BD6FF;
+	
+}
+
+input[type=text], input[type=button], input[type=password], input[type=submit] {
+	font-family: Quicksand;
+}
+
+select {
+	font-family: Quicksand;
+}
+
+
+.logo-badge {
+	
+	font-weight: bold;
+	font-size: 40pt;
+	
+}
+
+.field_watermark{
+	font-family: Quicksand;
+	color: #EEE;
+}
+
+.link_pequeno{
+	font-size: 8pt;
+}
+
+/* -------------- Rodapé --------------- */
+
+#footer{
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 120px;
+	height: 40px;
+	border-top: 0px solid #FFFFFF;
+	font-family: "Quicksand";
+	font-size: 10pt;
+	text-align: center;
+}
+
+.footer_link a {
+	
+
+}
+
+
+
+.login-painel {
+	
+    border: solid 0px black;
+   /* position: fixed; */
+   
+    left: 50%;
+    
+  
+    z-index: 100;
+ 	text-align: center;
+    height: 500px;
+    margin-top: 30px;
+    margin-left:auto;
+	margin-right:auto;
+
+    width: 500px;
+
+
+}
+
+.login_field{
+		
+	width: 275px;
+	height: 35px;
+	border: 0;
+	padding:4px;
+	font-size: 14pt;
+	color: #2F4147;
+	
+}
+
+.login_botao{
+	cursor: pointer;
+	width: 179px;
+	height: 40px;
+/*	border: solid 3px #49ABCC;  */
+	border: 0;
+	font-size: 12pt;
+	background-color: #54757F;
+	color: #FFFFFF;
+}
+
+.login_botao:hover {
+	background-color: #A8E9FF;
+	color: #2D3F45;
+}
+
+
+/* --------- Cadastro -----------*/
+
+.cadastro_painel {
+	
+    border: solid 0px black;
+    margin-left:auto;
+	margin-right:auto;
+   
+    left: 50%;
+    top: 30%;
+  
+    z-index: 100;
+
+    height: 550px;
+    margin-top: 20px;
+
+    width: 600px;
+    
+
+}
+
+
+#cadastro_form{
+	border: solid 0px black;
+	width: 400px;
+	text-align: left;
+	margin-left: 80px;
+    	 
+	
+}
+
+#cadastro_form div {
+	margin: 20px;
+	width: 100%;
+}
+
+
+.cadastro_field{
+
+	height: 30px;
+	width: 100%;
+	border: 0;
+	padding: 4px;
+	font-size: 13pt;
+	
+}
+
+.cadastro_select{
+
+	height: 35px;
+	width: 103%;
+	border: 0;
+	padding: 0px;
+	font-size: 13pt;
+	
+}
+
+
+
+
+#header {
+	text-align: center;
+	margin: 12px 0 0 12px;
+	font-size: 48pt;
+	border: solid 0px #ffffff; 
+}
+
+
+.botao{
+	cursor: pointer;
+	height: 40px;
+	border: 0;
+	font-size: 12pt;
+	background-color: #54757F;
+	color: #FFFFFF;
+}
+
+.botao:hover {
+	background-color: #A8E9FF;
+	color: #2D3F45;
+}
+
+.estatistica_box {
+	border: 1px solid #DDDDDD;
+	margin: 12px;
+	padding: 8px;
+	width: 45%;
+	float: left;
+}
+
+.tabela_estatistica {
+	width: 100%;
+}
+
+.tabela_estatistica th {
+	padding: 4px;
+	background-color: #A8E9FF;
+	color: #2F4147;
+
+}
+
+.tabela_estatistica tr {
+	padding:4px;
+	background-color: #51707A;
+
+}
+
+.tabela_estatistica td {
+	padding:4px;
+
+}
+
+

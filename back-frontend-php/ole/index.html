@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ole Peter Smith Automated Home</title>
+
+
+<style>
+
+	a {
+		color: #000;
+		text-decoration: none;
+	}
+
+	.btn {
+		display: block;
+		width: 100px;
+		height: 50px;
+		background-color: #aaa;
+		text-align: center;
+		
+	
+	
+	}
+	
+	.btn:hover {
+		background-color: #999;
+	}
+	
+
+</style>
+
+<script type="text/javascript">
+
+function ajaxCall( url ){
+	load(url, callback );
+}
+
+
+function callback( data ){
+	alert( url );
+}
+
+function load(url, callback) {
+        var xhr;
+         
+        if(typeof XMLHttpRequest !== 'undefined') xhr = new XMLHttpRequest();
+        else {
+            var versions = ["MSXML2.XmlHttp.5.0", 
+                            "MSXML2.XmlHttp.4.0",
+                            "MSXML2.XmlHttp.3.0", 
+                            "MSXML2.XmlHttp.2.0",
+                            "Microsoft.XmlHttp"];
+ 
+             for(var i = 0, len = versions.length; i < len; i++) {
+                try {
+                    xhr = new ActiveXObject(versions[i]);
+                    break;
+                }
+                catch(e){}
+             } // end for
+        }
+         
+        xhr.onreadystatechange = ensureReadiness;
+         
+        function ensureReadiness() {
+            if(xhr.readyState < 4) {
+                return;
+            }
+             
+            if(xhr.status !== 200) {
+                return;
+            }
+ 
+            // all is well  
+            if(xhr.readyState === 4) {
+            	if( callback)
+                	callback(xhr);
+            }           
+        }
+         
+        xhr.open('GET', url, true);
+        xhr.send('');
+
+}//fim do load
+
+</script>
+
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td> <a href="#" onclick="ajaxCall('/rele1');" class="btn">Fundo Garagem</a> </td>
+			<td> <a href="#" onclick="ajaxCall('/rele2');" class="btn">Lateral Quintal</a> </td>
+		</tr>
+	
+		<tr>
+			<td> <a href="#" onclick="ajaxCall('/rele3');" class="btn">Fundo Garagem</a> </td>
+			<td> <a href="#" onclick="ajaxCall('/rele4');"  class="btn">Lateral Quintal</a> </td>
+		</tr>
+	
+		<tr>
+			<td> <a href="#" onclick="ajaxCall('/tudo');"class="btn">Liga Todas</a> </td>
+			<td> <a href="#" onclick="ajaxCall('/nada');"class="btn">Desliga Todas</a> </td>
+		</tr>
+	
+	
+	</table>
+
+
+</body>
+</html>
